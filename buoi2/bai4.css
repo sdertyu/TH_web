@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(252, 132, 58);
+}
+
+h1 {
+    /* height: 70px; */
+    
+    color: white;
+    margin: auto 0;
+    margin-left: 20px;
+}
+
+.nav {
+
+    height: fit-content;
+    background-color: rgba(252, 132, 58, 0.696);
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.nav li {
+    list-style-type: none;
+    margin: 0 30px;
+    font-size: 20px;
+    color: white;
+    /* width: max-content; */
+    padding: 10px;
+}
+
+.content {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-columns: 3fr 9fr
+}
+
+.search {
+
+    margin-top: 20px;
+    margin-left: 20px;
+    /* background-color: aquamarine; */
+}
+
+input:hover {
+    background-color: rgb(113, 237, 113);
+}
+
+.list-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.title p {
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+.book {
+    display: inline-block;
+    border: 2px black solid;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 350px;
+}
+
+.image {
+    margin: 5px auto;
+    height: 90%;
+    width: 95%;
+    /* object-fit: cover;
+    object-position: center; */
+    /* margin: 5px; */
+    /* margin-right: 10px; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+
+.nav li:nth-child(1) {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown li {
+    width: 100%;
+    display: block;
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 100%; */
+    /* width: inherit; */
+    color: black;
+    background-color: rgb(249, 146, 82);
+    margin: 0;
+    color: white;
+    display: none;
+    /* padding: 0; */
+}
+
+.dropdown li:hover {
+    background-color: orange;
+}
+
+.nav li:nth-child(1):hover .dropdown li{
+    display: block;
+}
+
+.footer {
+    height: 40px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .content {
+        display: block;
+        height: max-content;
+    }
+
+    .nav li {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .list-books {
+        justify-content: space-evenly;
+    }
+
+
+
+
+}

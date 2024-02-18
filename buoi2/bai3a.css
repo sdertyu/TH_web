@@ -1,0 +1,34 @@
+img {
+    width: 200px;
+}
+
+.body__content {
+    display: flex;
+    background-color: bisque;
+    margin-bottom: 10px;
+}
+
+.maincontent {
+    /* display: inline-block; */
+    /* margin: auto 0; */
+    margin-left: 50px;
+}
+
+h2 {
+    color: red;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: blanchedalmond;
+    height: 50px;
+    
+}
+
+footer p {
+    color: red;
+    padding-top: 15px;
+}
