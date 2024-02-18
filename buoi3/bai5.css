@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    margin: 250px auto;
+    border: 2px solid;
+    /* position: absolute; */
+    top: 50;
+    width: 350px;
+    height: 150px;
+}
+
+.chuoi {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.danh_sach {
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+input {
+    margin-left: 28px;
+}
+
+select {
+    width: 170px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+}
+
+.btn {
+    padding: 5px;
+}
+
+.btnThucHien {
+    margin-right: 7px;
+}
+/* body {
+    position: relative;
+    min-width: 100%;;
+    min-height: 100%;
+}
+ */
